@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="qr-code-component/images/favicon-32x32.png">
+    <title>Miguelpr123 - Frontend Mentor</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        .card,
+        .card>* {
+            border: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" id="navId" role="tablist">
+        <li class="nav-item d-flex justify-content-center align-items-center ">
+            <div class="d-flex justify-content-center align-items-center ">
+                <img src="qr-code-component/images/favicon-32x32.png" alt="">
+                <div class="mx-2 "><strong>My Challenges</strong></div>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a href="#tab1Id" class="nav-link active" data-bs-toggle="tab" aria-current="page">Newbie</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a href="#tab2Id" class="nav-link disabled" data-bs-toggle="tab">Junior</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a href="#tab3Id" class="nav-link disabled" data-bs-toggle="tab">Intermediate</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a href="#tab4Id" class="nav-link disabled" data-bs-toggle="tab">Advanced</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a href="#tab5Id" class="nav-link disabled" data-bs-toggle="tab">Guru</a>
+        </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content" id="myTabContent">
+
+        <!-- ------------------------------------- ------------------------------------ -->
+        <!-- ------------------------------------- NEWBIE ------------------------------------ -->
+        <!-- -------------------------------------  ------------------------------------ -->
+        <div class="tab-pane fade show active" id="tab1Id" role="tabpanel">
+            <div class="container my-5 ">
+                <h4>Newbie</h4>
+                <div class="row justify-content-evenly align-content-between py-4 ">
+
+                    <div class="col-12 col-md-5 col-lg-3 my-3 ">
+                        <div class="card shadow " >
+                            <div class="card-header">
+                                <div>
+                                    <img class="card-img-top" src="qr-code-component/results/xl.png" alt="Miguelpr123 qr-code-component Image" />
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <strong>Frontend Mentor | QR code component</strong>
+                                </h4>
+                                <a href="qr-code-component/index.html" target="_blank" class="btn btn-primary" >VIEW CHALLENGE</a>
+                            </div>
+                            <div class="card-footer text-muted small d-flex flex-column ">
+                                <span>Source code: <a href="https://github.com/Miguelpr123/frontendmentor/qr-code-component/"
+                                        target="_blank">Github</a>.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- ------------------------------------- ------------------------------------ -->
+        <!-- ------------------------------------- JUNIOR ------------------------------------ -->
+        <!-- -------------------------------------  ------------------------------------ -->
+        <div class="tab-pane fade show active" id="tab2Id" role="tabpanel">
+           
+        </div>
+
+        <!-- ------------------------------------- ------------------------------------ -->
+        <!-- ------------------------------------- INTERMEDIATE ------------------------------------ -->
+        <!-- -------------------------------------  ------------------------------------ -->
+        <div class="tab-pane fade show active" id="tab3Id" role="tabpanel">
+
+        </div>
+
+        <!-- ------------------------------------- ------------------------------------ -->
+        <!-- ------------------------------------- ADVANCED ------------------------------------ -->
+        <!-- -------------------------------------  ------------------------------------ -->
+        <div class="tab-pane fade show active" id="tab4Id" role="tabpanel">
+
+        </div>
+    </div>
+
+    <!-- (Optional) - Place this js code after initializing bootstrap.min.js or bootstrap.bundle.min.js -->
+    <script>
+        var triggerEl = document.querySelector("#navId a");
+        bootstrap.Tab.getInstance(triggerEl).show(); // Select tab by name
+    </script>
+
+
+</body>
+
+</html>

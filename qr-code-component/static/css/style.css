@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --color-white: hsl(0, 0%, 100%);
+    --color-primero: hsl(212, 45%, 89%);
+    --color-segundo: hsl(216, 15%, 48%);
+    --color-tercero: hsl(218, 44%, 22%);
+
+    --ff: 'Outfit';
+    --fw-sm: 700;
+    --fw-lg: 700;
+    --fz-paragraph: 15px;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border: 0;
+    font-family: var(--ff);
+}
+
+body {
+    color: #000000;
+    background-color: var(--color-primero);
+    overflow-x: hidden;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.center {
+    -webkit-display: flex;
+    -moz-display: flex;
+    -o-display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cap {
+    /* background :rgb(0,0,0,0.5);
+        background :rgba(0,0,0,0.5); */
+    background: linear-gradient(180deg, transparent, rgb(60, 10, 139) 100%);
+    color: #ffffff;
+    z-index: 2;
+}
+
+.transition {
+    transition: all 600ms ease;
+}
+
+.zoom-bg {
+    transition: background-size transform 600ms ease;
+}
+
+.zoom-bg:hover {
+    background-size: 120% 120%;
+    transition: background-size 600ms ease;
+}
+
+.zoom-fit {
+    transition: transform 600ms ease;
+}
+
+.zoom-fit:hover {
+    transform: scale(1.05, 1.05);
+    transition: transform 600ms ease;
+}
+
+.mh {
+    -webkit-min-height: 200px;
+    -moz-min-height: 200px;
+    -o-min-height: 200px;
+    min-height: 200px;
+}
+
+.mh-md {
+    -webkit-min-height: 350px;
+    -moz-min-height: 350px;
+    -o-min-height: 350px;
+    min-height: 350px;
+}
+
+.mh-lg {
+    -webkit-min-height: 500px;
+    -moz-min-height: 500px;
+    -o-min-height: 500px;
+    min-height: 500px;
+}
+
+/* Bootstrap  */
+/* ul.navbar-nav > li.nav-item > a.nav-link:hover {
+        color:#fff;
+        background :#000;
+} */
+
+
+
+/*-----------------------------------------------------*/
+
+
+p {
+    font-size: var(--fz-paragraph);
+    font-family: "Outfit", sans-serif;
+}
+
+
+.outfit-font-sm {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: var(--fw-sm);
+    font-style: normal;
+}
+
+.outfit-font-lg {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: var(--fw-lg);
+    font-style: normal;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    font-family: var(--ff);
+}
+
+.attribution a {
+    color: rgb(62, 82, 163);
+    color: hsl(228, 45%, 44%);
+}
+
+.card {
+    background-color: var(--color-white);
+}
+
+.card,
+.card>* {
+    border: none;
+}
+
+.radius {
+    border-radius: 15px;
+}
+
+.img-qr {
+    /* filter: hue-rotate(180deg) saturate(2) brightness(0.8); */
+    /* filter: hue-rotate(30deg) saturate(1.5) brightness(1.1); */
+
+    /* filter: invert(30%) sepia(100%) saturate(500%) hue-rotate(200deg) brightness(90%) contrast(85%); */
+    filter: hue-rotate(25deg) contrast(305%) ;
+
+}
+
+/*-----------------------------------------------------*/
+
+
+
+
+/* ====================== RESPONSIVE BOOTSTRAP ======================== */
+
+
+@media (max-width :576px) {
+    /*xs*/
+
+}
+
+@media (min-width :576px) {
+    /*sm*/
+
+}
+
+@media (min-width :768px) {
+    /*md*/
+
+}
+
+@media (min-width :991px) {
+    /*lg*/
+
+}
+
+@media (min-width :1200px) {
+    /*xl*/
+
+}
+
+
+
+/* ====================== RESPONSIVE FRONTEND MENTOR ======================== */
+
+
+@media (min-width :375px) {
+    /*MOBILE*/
+
+}
+
+@media (min-width :1440px) {
+    /*DESKTOP*/
+
+}
+
+
+
+/*-----------------------------------------------------*/
