@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.pill{
+    @apply rounded-lg p-3 font-mono;
+}

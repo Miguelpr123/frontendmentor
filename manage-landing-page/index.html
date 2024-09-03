@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Manage landing page</title>
+
+    <link rel="stylesheet" href="src/output.css">
+
+    <!-- OWL Carousel -->
+    <link rel="stylesheet" href="static/owl/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="static/owl/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <script src="static/jquery/jquery-3.7.1.min.js"></script>
+    <script src="static/owl/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="static/owl-config.js"></script>
+
+    <link rel="stylesheet" href="static/custom.css">
+
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav id="menu" class="fixed flex w-full justify-between items-center py-12" style="z-index: 3;">
+        <div>
+            <img src="images/logo.svg" alt="Logo">
+        </div>
+        <div>
+            <ul class="hidden md:flex text-xs ">
+                <li class="mx-2 cursor-pointer hover:text-gray-400 ">Pricing</li>
+                <li class="mx-2 cursor-pointer hover:text-gray-400 ">Product</li>
+                <li class="mx-2 cursor-pointer hover:text-gray-400 ">About Us</li>
+                <li class="mx-2 cursor-pointer hover:text-gray-400 ">Careers</li>
+                <li class="mx-2 cursor-pointer hover:text-gray-400 ">Community</li>
+            </ul>
+        </div>
+        <div class="hidden md:inline btn btn-orange rounded-full text-xs ">Get Started</div>
+
+        <!-- TODO: Menu desplegable -->
+        <div id="btn-toggle-menu" class="md:hidden" style="cursor: pointer;" ><img src="images/icon-hamburger.svg" alt=""></div>
+        <div id="toggle-navigation" class="hidden transition absolute w-full pt-16 px-3 cap "
+            style="top: 100px; left: 0; height: calc(100vh - 100px) ">
+            <ul class="bg-gray-50 text-gray-950 p-3 rounded center flex-col ">
+                <li class="m-2 cursor-pointer hover:text-gray-400 ">Pricing</li>
+                <li class="m-2 cursor-pointer hover:text-gray-400 ">Product</li>
+                <li class="m-2 cursor-pointer hover:text-gray-400 ">About Us</li>
+                <li class="m-2 cursor-pointer hover:text-gray-400 ">Careers</li>
+                <li class="m-2 cursor-pointer hover:text-gray-400 ">Community</li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <main class="pt-16">
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-5 mt-16 pt-16 mb-6 ">
+            <div class="flex flex-col justify-center order-last md:order-first ">
+                <div class="flex flex-col justify-start " >
+                    <h1 class="h1 pb-6 text-center md:text-left ">Bring everyone together to build better products. </h1>
+                    <p class="p text-center md:text-left " style="width: 350px;"> Manage makes it simple for software teams to plan day-to-day
+                        tasks while keeping the larger team goals in view.</p>
+                    <div class="mt-6 flex justify-center md:block " >
+                        <button class="btn btn-orange rounded-full text-xs ">Get Started</button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center">
+                <div>
+                    <img src="images/illustration-intro.svg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="grid md:grid-cols-2 gap-5 mt-16 mid-section ">
+
+            <div class="order-first">
+                <div class="flex flex-col ">
+                    <h2 class="h2 pb-6 text-center md:text-left ">What’s different about Manage? </h2>
+                    <p class="p text-center md:text-left " style="width: 350px;">Manage provides all the functionality your team needs, without
+                        the complexity. Our software is tailor-made for modern digital
+                        product teams. </p>
+                </div>
+            </div>
+
+            <div class="flex flex-col mt-4 md:mt-0 ">
+                <div class="flex flex-col mb-4 ">
+                    <div class="flex items-center md:bg-white mini-title mt-4  ">
+                        <span class="pill mr-2 md:mr-0 ">01</span>
+                        <span class="title2 md:ml-6 ">Track company-wide progress</span>
+                    </div>
+                    <p class="p mt-4 md:ml-20 ">See how your day-to-day tasks fit into the wider vision. Go from
+                        tracking progress at the milestone level all the way done to the
+                        smallest of details. Never lose sight of the bigger picture again.</p>
+                </div>
+                <div class="flex flex-col mb-4 ">
+                    <div class="flex items-center md:bg-white mini-title mt-4  ">
+                        <span class="pill mr-2 md:mr-0 ">02</span>
+                        <span class="title2 md:ml-6 ">Advanced built-in reports</span>
+                    </div>
+                    <p class="p mt-4 md:ml-20 ">Set internal delivery estimates and track progress toward company
+                        goals. Our customisable dashboard helps you build out the reports
+                        you need to keep key stakeholders informed.</p>
+                </div>
+                <div class="flex flex-col mb-4 ">
+                    <div class="flex items-center md:bg-white mini-title mt-4  ">
+                        <span class="pill mr-2 md:mr-0 ">03</span>
+                        <span class="title2 md:ml-6 ">Everything you need in one place</span>
+                    </div>
+                    <p class="p mt-4 md:ml-20 ">Stop jumping from one service to another to communicate, store files,
+                        track tasks and share documents. Manage offers an all-in-one team
+                        productivity solution.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="my-6">
+            <div class="center">
+                <h2 class="h2">What they’ve said</h2>
+            </div>
+            <!-- owl slider -->
+            <div class="owl-carousel owl-theme my-16  ">
+
+                <div class="flex flex-col center ">
+                    <div class="center my-2 " >
+                        <img src="images/avatar-anisha.png" style="width: 50%;" alt="">
+                    </div>
+                    <div class="title2 my-2 ">Anisha Li</div>
+                    <p class="p text-center my-2 ">“Manage has supercharged our team’s workflow. The ability to maintain
+                        visibility on larger milestones at all times keeps everyone motivated.”</p>
+                </div>
+
+                <div class="flex flex-col center ">
+                    <div class="center my-2 " >
+                        <img src="images/avatar-ali.png" style="width: 50%;" alt="">
+                    </div>
+                    <div class="title2 my-2 ">Ali Bravo</div>
+                    <p class="p text-center my-2 ">“We have been able to cancel so many other subscriptions since using
+                        Manage. There is no more cross-channel confusion and everyone is much
+                        more focused.”</p>
+                </div>
+
+                <div class="flex flex-col center ">
+                    <div class="center my-2 " >
+                        <img src="images/avatar-richard.png" style="width: 50%;" alt="">
+                    </div>
+                    <div class="title2 my-2 ">Richard Watts</div>
+                    <p class="p text-center my-2 ">“Manage allows us to provide structure and process. It keeps us organized
+                        and focused. I can’t stop recommending them to everyone I talk to!”</p>
+                </div>
+
+                <div class="flex flex-col center ">
+                    <div class="center my-2 " >
+                        <img src="images/avatar-shanai.png" style="width: 50%;" alt="">
+                    </div>
+                    <div class="title2 my-2 ">Shanai Gough</div>
+                    <p class="p text-center my-2 ">“Their software allows us to track, manage and collaborate on our projects
+                        from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
+                </div>
+
+            </div>
+            <div class="w-100 center " >
+                <button class="btn btn-orange rounded-full text-xs ">Get Started</button>
+            </div>
+
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-2 mt-20 py-16 " style="background-color: var(--color-primary-Bright-Red); background-image: url('images/bg-simplify-section-desktop.svg'); " >
+            <div class="center" style="width: var(--w3);">
+                <h2 class="h2-white text-center md:text-left " >Simplify how your team works today.</h2>
+            </div>
+            <div class="center">
+                <button class=" btn btn-white rounded-full text-xs mt-4 md:mt-0 ">Get Started</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="grid grid-cols-2 md:grid-cols-4 md:grid-rows-2 text-white py-16 " style="background-color: var(--color-neutral-Very-Dark-Blue);" >
+
+        <div class="col-span-2 order-5 md:col-span-1 md:order-1 my-4 md:my-0 flex justify-center md:block ">
+            <img src="images/logo-white.svg" alt="">
+        </div>
+        <div class="col-span-2 order-4 md:col-span-1 md:order-5 my-4 md:my-0 " >
+            <div class="flex w-full h-full items-end justify-center md:justify-start " >
+                <div class="mx-2" >
+                    <img src="images/icon-facebook.svg" alt="">
+                </div>
+                <div class="mx-2" >
+                    <img src="images/icon-youtube.svg" alt="">
+                </div>
+                <div class="mx-2" >
+                    <img src="images/icon-twitter.svg" alt="">
+                </div>
+                <div class="mx-2" >
+                    <img src="images/icon-pinterest.svg" alt="">
+                </div>
+                <div class="mx-2" >
+                    <img src="images/icon-instagram.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center md:block order-2 pl-2 md:pl-0 md:order-2 md:row-span-2 my-4 md:my-0 " >
+            <ul class="">
+                <li class="font-normal" style="line-height: 2rem;" >Home </li>
+                <li class="font-normal" style="line-height: 2rem;" >Pricing </li>
+                <li class="font-normal" style="line-height: 2rem;" >Products </li>
+                <li class="font-normal" style="line-height: 2rem;" >About Us </li>
+            </ul>
+        </div>
+        <div class="flex justify-center md:block order-3 pr-2 md:pr-0 md:order-3 md:row-span-2 my-4 md:my-0 " >
+            <ul class="">
+                <li class="font-normal" style="line-height: 2rem;" >Careers </li>
+                <li class="font-normal" style="line-height: 2rem;" >Community </li>
+                <li class="font-normal" style="line-height: 2rem;" >Privacy Policy </li>
+            </ul>
+        </div>
+        <div class="col-span-2 order-1 md:col-span-1 md:order-4 my-4 md:my-0 ">
+            <form action="" class="flex justify-center " >
+                <input type="text" class="input-footer mx-2 " placeholder="Updates in your inbox…" name="" id="">
+                <button class="pill" >Go</button>
+            </form>
+        </div>
+        <div class="col-span-2 order-6 md:col-span-1 md:order-6 text-gray-500 flex justify-center md:justify-end items-end mt-4 md:my-0 " >
+            <div>
+                <small>Copyright &copy; 2024. All Rights Reserved </small>
+            </div>
+        </div>
+        
+
+    </footer>
+
+
+    <!-- 
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+
+    <script src="static/custom.js"></script>
+
+
+
+</body>
+
+</html>

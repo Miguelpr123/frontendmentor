@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color-white: hsl(0, 0%, 100%);
+    --color-black: hsl(0, 0%, 0%);
+
+    /* Primary colors  */
+    --color-primary-Bright-Red: hsl(12, 88%, 59%);
+    --color-primary-Dark-Blue: hsl(228, 39%, 23%);
+
+    /* Neutral colors */
+    --color-neutral-Dark-Grayish-Blue: hsl(227, 12%, 61%);
+    --color-neutral-Very-Dark-Blue: hsl(233, 12%, 13%);
+    --color-neutral-Very-Pale-Red: hsl(13, 100%, 96%);
+    --color-neutral-Very-Light-Gray: hsl(0, 0%, 98%);
+
+    /* Weights */
+    --w1: '400px';
+    --w2: '500px';
+    --w3: '700px';
+
+    /* Font */
+
+    --ff: "Be Vietnam Pro", sans-serif;
+    --fz: 16px;
+    --fw: normal;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border: 0;
+    font-family: var(--ff);
+}
+
+body {
+    color: #000000;
+    background-color: var(--color-neutral-Very-Light-Gray);
+    overflow-x: hidden;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+.center {
+    -webkit-display: flex;
+    -moz-display: flex;
+    -o-display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cap {
+    background: linear-gradient(180deg, transparent, var(--color-neutral-Dark-Grayish-Blue) 100%);
+    color: #ffffff;
+    z-index: 2;
+}
+
+.transition {
+    transition: all 600ms ease;
+}
+
+.zoom-bg {
+    transition: background-size transform 600ms ease;
+}
+
+.zoom-bg:hover {
+    background-size: 120% 120%;
+    transition: background-size 600ms ease;
+}
+
+.zoom-fit {
+    transition: transform 600ms ease;
+}
+
+.zoom-fit:hover {
+    transform: scale(1.05, 1.05);
+    transition: transform 600ms ease;
+}
+
+.mh {
+    -webkit-min-height: 200px;
+    -moz-min-height: 200px;
+    -o-min-height: 200px;
+    min-height: 200px;
+}
+
+.mh-md {
+    -webkit-min-height: 350px;
+    -moz-min-height: 350px;
+    -o-min-height: 350px;
+    min-height: 350px;
+}
+
+.mh-lg {
+    -webkit-min-height: 500px;
+    -moz-min-height: 500px;
+    -o-min-height: 500px;
+    min-height: 500px;
+}
+
+/* Bootstrap  */
+/* ul.navbar-nav > li.nav-item > a.nav-link:hover {
+        color:#fff;
+        background :#000;
+} */
+
+
+
+/*-----------------------------------------------------*/
+
+
+p,
+body,
+* {
+    font-size: var(--fz-paragraph);
+    font-family: var(--ff);
+    font-optical-sizing: auto;
+    font-weight: var(--fw);
+    font-style: normal;
+}
+
+
+.owl-theme .owl-dots .owl-dot span {
+    background: var(--color-neutral-Very-Pale-Red);
+    border: red 1px solid;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    background: var(--color-primary-Bright-Red);
+    border: 0;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    font-family: var(--ff);
+}
+
+.attribution a {
+    color: rgb(62, 82, 163);
+    color: hsl(228, 45%, 44%);
+}
+
+.btn {
+    padding: .7rem 1.5rem;
+    cursor: pointer;
+    font-weight: 600;
+    position: relative;
+    border-radius: 9999px;
+    /* .rounded-full */
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background-color: var(--color-primary-Bright-Red);
+    z-index: -1;
+    transition: all .3s;
+    filter: blur(8px);
+    opacity: .7;
+    top: 10px;
+    left: 50%;
+    transform-origin: 0 0;
+    transform: translateX(-50%);
+}
+
+.btn-orange {
+    background-color: var(--color-primary-Bright-Red);
+    color: var(--color-white);
+}
+
+.btn-white {
+    background-color: var(--color-white);
+    color: var(--color-primary-Bright-Red);
+}
+
+
+.h1 {
+    color: var(--color-primary-Dark-Blue);
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.h2 {
+    color: var(--color-primary-Dark-Blue);
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.h2-white {
+    color: var(--color-white);
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 80%;
+}
+
+.title2 {
+    font-weight: bold;
+    font-size: 100%;
+    color: var(--color-primary-Dark-Blue);
+}
+
+.p {
+    color: var(--color-neutral-Dark-Grayish-Blue);
+}
+
+.pill {
+    color: white;
+    background-color: var(--color-primary-Bright-Red);
+    padding: 5px 20px;
+    font-size: 80%;
+    font-weight: 600;
+    border-radius: 9999px;
+}
+
+main {
+    background-image: url('../images/bg-tablet-pattern.svg');
+    background-repeat: no-repeat;
+}
+
+.input-footer {
+    padding: 10px 20px;
+    border-radius: 99999px;
+    font-size: small;
+    color: var(--color-neutral-Very-Dark-Blue);
+}
+
+.mini-title {
+    background-color: var(--color-neutral-Very-Pale-Red);
+    border-radius: 99999px;
+}
+
+/* main{
+    background-image: url('../images/bg-tablet-pattern.svg');
+    background-repeat: no-repeat;
+    /* background-position: -400px 150px; * /
+    /* overflow: visible; * /
+} */
+
+/*-----------------------------------------------------*/
+
+
+
+
+/* ====================== RESPONSIVE BOOTSTRAP ======================== */
+
+
+@media (max-width :576px) {
+    /*xs*/
+
+}
+
+@media (min-width :576px) {
+    /*sm*/
+
+}
+
+@media (min-width :768px) {
+    /*md*/
+}
+
+@media (min-width :991px) {
+    /*lg*/
+
+}
+
+@media (min-width :1200px) {
+    /*xl*/
+
+}
+
+
+/* ====================== RESPONSIVE TAILWIND ======================== */
+
+
+
+@media (max-width: 639px) {
+
+    /* sm */
+    section,
+    footer,
+    nav {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    main {
+        background-position: top -10px right -120px;
+        background-size: 120%;
+    }
+
+    main::after {
+        background-position: top -100px right -150px;
+        background-color: red;
+        background-size: 420%;
+    }
+}
+
+@media (min-width: 640px) {
+    /* md */
+
+    .h1 {
+        color: var(--color-primary-Dark-Blue);
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .h2 {
+        color: var(--color-primary-Dark-Blue);
+        font-size: 2.5rem;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .h2-white {
+        color: var(--color-white);
+        font-size: 2.5rem;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    .mini-title {
+        background-color: transparent;
+    }
+
+    section,
+    footer,
+    nav {
+        padding-left: 180px;
+        padding-right: 100px;
+    }
+
+    main {
+        background-position: top -220px right -220px;
+    }
+}
+
+@media (min-width: 768px) {
+    /* lg */
+}
+
+@media (min-width: 1024px) {
+    /* xl */
+}
+
+@media (min-width: 1280px) {
+    /* 2xl */
+}
+
+
+
+/* ====================== RESPONSIVE FRONTEND MENTOR ======================== */
+
+
+@media (min-width :375px) {
+    /*MOBILE*/
+
+}
+
+@media (min-width :1440px) {
+    /*DESKTOP*/
+
+}
+
+
+
+/*-----------------------------------------------------*/
