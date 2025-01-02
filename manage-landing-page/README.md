@@ -21,7 +21,7 @@ This is a solution to the [Manage landing page challenge on Frontend Mentor](htt
 ### Links
 
 - Solution URL: [Github Source Code](https://github.com/Miguelpr123/frontendmentor/tree/master/manage-landing-page)
-- Live Site URL: [Live site URL here](https://miguelpr123.github.io/frontendmentor/manage-landing-page)
+- Live Site URL: [Live site URL here](https://miguelpr-frontendmentor.netlify.app/manage-landing-page)
 
 ## My process
 

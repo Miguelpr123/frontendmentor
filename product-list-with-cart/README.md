@@ -21,7 +21,7 @@ This is a solution to the [Product List With Card challenge on Frontend Mentor](
 ### Links
 
 - Solution URL: [Github Source Code](https://github.com/Miguelpr123/frontendmentor/tree/master/product-list-with-cart)
-- Live Site URL: [Live site URL here](https://miguelpr123.github.io/frontendmentor/product-list-with-cart)
+- Live Site URL: [Live site URL here](https://miguelpr-frontendmentor.netlify.app/product-list-with-cart)
 
 ## My process
 
