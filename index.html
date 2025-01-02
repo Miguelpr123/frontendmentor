@@ -39,7 +39,7 @@
             <a href="#tab1Id" class="nav-link active" data-bs-toggle="tab" aria-current="page">Newbie</a>
         </li>
         <li class="nav-item" role="presentation">
-            <a href="#tab2Id" class="nav-link disabled" data-bs-toggle="tab">Junior</a>
+            <a href="#tab2Id" class="nav-link" data-bs-toggle="tab">Junior</a>
         </li>
         <li class="nav-item" role="presentation">
             <a href="#tab3Id" class="nav-link" data-bs-toggle="tab">Intermediate</a>
@@ -90,14 +90,39 @@
         <!-- ------------------------------------- ------------------------------------ -->
         <!-- ------------------------------------- JUNIOR ------------------------------------ -->
         <!-- -------------------------------------  ------------------------------------ -->
-        <div class="tab-pane fade show active" id="tab2Id" role="tabpanel">
-           
+        <div class="tab-pane fade hide active" id="tab2Id" role="tabpanel">
+           <div class="container my-5 ">
+                <h4>Junior</h4>
+                <div class="row justify-content-evenly align-content-between py-4 ">
+
+                    <div class="col-12 col-md-5 col-lg-3 my-3 ">
+                        <div class="card shadow " >
+                            <div class="card-header">
+                                <div>
+                                    <img class="card-img-top" src="product-list-with-cart/results/xl.png" alt="Miguelpr123 product-list-with-cart Image" />
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    <strong>Frontend Mentor | Product List With Cart</strong>
+                                </h4>
+                                <a href="product-list-with-cart/index.html" target="_blank" class="btn btn-primary" >VIEW CHALLENGE</a>
+                            </div>
+                            <div class="card-footer text-muted small d-flex flex-column ">
+                                <span>Source code: <a href="https://github.com/Miguelpr123/frontendmentor/tree/master/product-list-with-cart/"
+                                        target="_blank">Github</a>.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
 
         <!-- ------------------------------------- ------------------------------------ -->
         <!-- ------------------------------------- INTERMEDIATE ------------------------------------ -->
         <!-- -------------------------------------  ------------------------------------ -->
-        <div class="tab-pane fade show active" id="tab3Id" role="tabpanel">
+        <div class="tab-pane fade hide active" id="tab3Id" role="tabpanel">
             <div class="container my-5 ">
                 <h4>Intermediate</h4>
                 <div class="row justify-content-evenly align-content-between py-4 ">
@@ -136,8 +161,10 @@
 
     <!-- (Optional) - Place this js code after initializing bootstrap.min.js or bootstrap.bundle.min.js -->
     <script>
-        var triggerEl = document.querySelector("#navId a");
-        bootstrap.Tab.getInstance(triggerEl).show(); // Select tab by name
+        window.addEventListener('load' , ()=>{
+            var triggerEl = document.querySelector("#navId a");
+            bootstrap.Tab.getInstance(triggerEl).show(); // Select tab by name
+        } )
     </script>
 
 
