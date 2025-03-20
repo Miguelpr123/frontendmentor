@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+    <title>Frontend Mentor | FAQ accordion</title>
+
+    <link rel="stylesheet" href="src/output.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</head>
+
+<body>
+
+    <div class="w-full h-80 bg-purple-500 "
+        style="background-image: url('assets/images/background-pattern-desktop.svg');"></div>
+    <div class="flex w-full justify-center items-center">
+
+        <!-- Card -->
+
+        <div class="flex flex-col mx-8 p-6 bg-white border border-gray-200 rounded-lg shadow-lg"
+            style="transform: translateY(-100px); width: 600px;">
+
+            <div class="flex items-center ml-2 mb-4">
+                <div class="mr-4">
+                    <img src="assets/images/icon-star.svg" alt="">
+                </div>
+                <h5 class="my-2 text-6xl font-bold tracking-tight text-gray-900 ">FAQs</h5>
+            </div>
+
+            <!-- Accordion -->
+
+            <div id="accordion-collapse" data-accordion="collapse">
+
+                <h2 id="accordion-collapse-heading-1">
+                    <button type="button"
+                        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black hover:text-purple-600 border border-b-0 border-gray-200 rounded-t-xl bg-white gap-3"
+                        data-accordion-target="#accordion-collapse-body-1" aria-expanded="true"
+                        aria-controls="accordion-collapse-body-1">
+                        <strong class="text-left">What is Frontend Mentor, and how will it help me?</strong>
+                        <img data-accordion-icon src="assets/images/icon-plus.svg" alt="">
+                    </button>
+                </h2>
+                <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+                    <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+                        <p class="mb-2 text-gray-500 dark:text-gray-400">
+                            Frontend Mentor offers realistic coding challenges to help developers improve their
+                            frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for
+                            all levels and ideal for portfolio building.
+                        </p>
+                    </div>
+                </div>
+
+                <h2 id="accordion-collapse-heading-2">
+                    <button type="button"
+                        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black hover:text-purple-600 border border-b-0 border-gray-200 bg-white gap-3"
+                        data-accordion-target="#accordion-collapse-body-2" aria-expanded="false"
+                        aria-controls="accordion-collapse-body-2">
+                        <strong class="text-left">Is Frontend Mentor free?</strong>
+                        <img data-accordion-icon src="assets/images/icon-plus.svg" alt="">
+                    </button>
+                </h2>
+                <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+                    <div class="p-5 border border-b-0 border-gray-200 dark:border-gray-700">
+                        <p class="mb-2 text-gray-500 dark:text-gray-400">
+                            Yes, Frontend Mentor offers both free and premium coding challenges, with the free
+                            option providing access to a range of projects suitable for all skill levels.
+                        </p>
+                    </div>
+                </div>
+
+                <h2 id="accordion-collapse-heading-3">
+                    <button type="button"
+                        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black border hover:text-purple-600 border-gray-200 bg-white gap-3"
+                        data-accordion-target="#accordion-collapse-body-3" aria-expanded="false"
+                        aria-controls="accordion-collapse-body-3">
+                        <strong class="text-left">Can I use Frontend Mentor projects in my portfolio?</strong>
+                        <img data-accordion-icon src="assets/images/icon-plus.svg" alt="">
+                    </button>
+                </h2>
+                <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+                    <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+                        <p class="mb-2 text-gray-500 dark:text-gray-400">
+                            Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
+                            way to showcase your skills to potential employers!
+                        </p>
+                    </div>
+                </div>
+
+                <h2 id="accordion-collapse-heading-4">
+                    <button type="button"
+                        class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-black border hover:text-purple-600 border-gray-200 bg-white gap-3"
+                        data-accordion-target="#accordion-collapse-body-4" aria-expanded="false"
+                        aria-controls="accordion-collapse-body-4">
+                        <strong class="text-left">How can I get help if I'm stuck on a Frontend Mentor
+                            challenge?</strong>
+                        <img data-accordion-icon src="assets/images/icon-plus.svg" alt="">
+                    </button>
+                </h2>
+                <div id="accordion-collapse-body-4" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+                    <div class="p-5 border border-t-0 border-gray-200 dark:border-gray-700">
+                        <p class="mb-2 text-gray-500 dark:text-gray-400">
+                            The best place to get help is inside Frontend Mentor's Discord community. There's a help
+                            channel where you can ask questions and seek support from other community members.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
+    <script>
+        function AccordionTarget() {
+            document.querySelectorAll('[data-accordion-target]').forEach(button => {
+
+                if (button.getAttribute('aria-expanded') === 'true') {
+                    // button.classList.remove('text-black');
+                    // button.classList.add('text-purple-600');
+
+                    button.querySelector('[data-accordion-icon]').src = 'assets/images/icon-minus.svg';
+                }
+
+                button.addEventListener('click', function () {
+                    document.querySelectorAll('[data-accordion-target]').forEach(btn => {
+                        //btn.classList.remove('text-purple-600');
+                        //btn.classList.add('text-black');
+                        var icon = btn.querySelector('[data-accordion-icon]')
+                        icon.src = "assets/images/icon-plus.svg"
+                    });
+                    if (this.getAttribute('aria-expanded') === 'true') {
+                        //this.classList.remove('text-black');
+                        //this.classList.add('text-purple-600');
+                        var icon = this.querySelector('[data-accordion-icon]')
+                        icon.src = "assets/images/icon-minus.svg"
+                    }
+                });
+
+            });
+        }
+        window.addEventListener('load', AccordionTarget)
+    </script>
+
+</body>
+
+</html>
